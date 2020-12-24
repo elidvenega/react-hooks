@@ -1,13 +1,19 @@
 import React, {useState} from 'react';
-import counter from './counter.css';
+import './css/style.css';
 
 function HookCounter() {
 
-    const [even,countByTwo] = useState(2);
+    const [number,count] = useState(0);
+
+   function addingByOne() {
+        count(number + 1)
+    }
 
     return (
         <div>
-            <button className="btn" onClick={() => countByTwo(even + 2)}>Add by two {even}</button>
+            <h1>Hook App</h1>
+            <button className="btn" onClick={() => addingByOne()}>Add by two {number}</button>
+            <p>Clicks {number}</p>
         </div>
     )
 }
