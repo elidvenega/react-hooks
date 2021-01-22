@@ -5,15 +5,11 @@ function HookCounter() {
 
     const [number,count] = useState(0);
 
-   function addingByOne() {
-        count(number + 1)
-    }
-
+    const addingByOne = () => count(number + 1);
     return (
         <div>
             <h1>Hook App</h1>
-            <button className="btn" onClick={() => addingByOne()}>Add by two {number}</button>
-            <p>Clicks {number}</p>
+            <button className="btn" onClick={() => addingByOne()}>Click {number}</button>
         </div>
     )
 }
