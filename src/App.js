@@ -6,14 +6,15 @@ import React from 'react';
 // import HookCounterOne from './components/HookCounterOne';
 // import ClassCounterOne from './components/ClassCounterOne';
 // import UseEffectOne from './components/UseEffectOne';
-import EffectTutorial from './components/EffectTutorial';
+// import EffectTutorial from './components/EffectTutorial';
+import RefTutorial from './components/RefTutorial';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
        {/* <UseEffectOne /> */}
-       <EffectTutorial />
+      <RefTutorial />
     </div>
   );
 }
