@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// useffect is a sid effect
+// useffect is a side effect
 function EffectTutorial() {
   const [resourceType, setResourceType] = useState("posts");
   const [items, setItems] = useState([]);

@@ -1,15 +1,11 @@
-import React from "react";
-
-import UseReducerHook from "./components/UseReducerHook";
 
 import "./App.css";
+import EffectTutorial from "./components/EffectTutorial";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <UseReducerHook />
+     <EffectTutorial />
     </div>
   );
 }
-
-export default App;

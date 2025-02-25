@@ -1,11 +1,12 @@
 .btn {
-    margin-top: 50px;
+    /* margin-top: 0px; */
     background-color: #2980b9;
     color: #fff;
     width: 100px;
     height: 40px;
     border: none;
     border-radius: 5%;
+    margin: 10px;
 }
 
 .output {
