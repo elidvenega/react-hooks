@@ -1,8 +1,17 @@
 import React, { useState, useEffect } from "react";
 // useffect is a side effect
-function EffectTutorial() {
+export default function EffectTutorial() {
   const [resourceType, setResourceType] = useState("posts");
   const [items, setItems] = useState([]);
+
+  // function () {
+  //   try{
+
+  //   }  catch(e) {
+  //     console.log(e, "Fetch Failed");
+
+  //   }
+  // }
 
   useEffect(() => {
     fetch(`https://jsonplaceholder.typicode.com/${resourceType}`)
@@ -19,17 +28,9 @@ function EffectTutorial() {
         <button onClick={() => setResourceType("comments")}>Comments</button>
       </div>
       <h1>{resourceType}</h1>
-      {items.map(item => {
-        return <pre>{JSON.stringify(item)}</pre>
+      {items.map((item) => {
+        return <pre>{JSON.stringify(item)}</pre>;
       })}
     </>
   );
 }
-
-export default EffectTutorial;
-
-
-
-
-
-
