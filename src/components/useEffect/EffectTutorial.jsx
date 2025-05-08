@@ -4,15 +4,7 @@ export default function EffectTutorial() {
   const [resourceType, setResourceType] = useState("posts");
   const [items, setItems] = useState([]);
 
-  // function () {
-  //   try{
-
-  //   }  catch(e) {
-  //     console.log(e, "Fetch Failed");
-
-  //   }
-  // }
-
+ 
   useEffect(() => {
     fetch(`https://jsonplaceholder.typicode.com/${resourceType}`)
       .then((resp) => resp.json())

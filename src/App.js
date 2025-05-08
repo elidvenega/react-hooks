@@ -1,6 +1,6 @@
 
 import "./App.css";
-import EffectTutorial from "./components/EffectTutorial";
+import EffectTutorial from "./components/useEffect/EffectTutorial";
 
 export default function App() {
   return (
