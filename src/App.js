@@ -1,11 +1,10 @@
 
 import "./App.css";
-import EffectTutorial from "./components/useEffect/EffectTutorial";
-
+import EffectHook from "./components/useEffect/EffectHook";
 export default function App() {
   return (
     <div className="App">
-     <EffectTutorial />
+   <EffectHook />
     </div>
   );
 }
